@@ -8,16 +8,13 @@ int main(){
 		int i, array[10];
 		float array2[10], sum =0, avg;
 		srand(time(NULL));
-
 		for (i = 0; i < 10; i++){
 			array[i] = rand()%10+1;
 			array2[i] = sqrt(array[i]);
 			sum += array2[i];
 			printf("Num: %d Root: %f\n", array[i], array2[i]);
 			avg = sum / 10;
-
 		}
-
 		printf("Sum of Roots: %f\n", sum);
 		printf("Average of Roots: %f\n", avg);
 
@@ -30,6 +27,7 @@ ALTERNATIVELY
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 int main(){
 		int i, array[10];
 		float sum =0, avg;

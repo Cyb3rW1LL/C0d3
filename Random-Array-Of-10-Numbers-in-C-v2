@@ -35,7 +35,7 @@ int main(){
 		float sum =0, avg;
 		srand(time(NULL));
 		for (i = 0; i < 10; i++){
-			array[i] = sqrt(rand()%10+1);
+			array[i] = sqrt(rand());
 			sum += array[i];
 			avg = sum / 10;
 		}

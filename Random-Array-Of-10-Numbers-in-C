@@ -3,38 +3,28 @@
 #include<stdlib.h>
 #include<time.h>
 
-double getavg(int ar1[], int size){ //function for root average
+double getavg(int ar1[], int size){	//function for root average
 
 	int i;
 	double avg;
 	double sum = 0;		    	//initialize sum
-
 	for (i = 0; i < size; i++){
 		sum += sqrt(ar1[i]);	//sum of square roots with decimals
 	}
-
-	avg = sum / size; 	    //avg of square roots
-
-	return avg;		    			//return avg with decimal
+	avg = sum / size; 	    	//avg of square roots
+	return avg;		    	//return avg with decimal
 }
 
 int main(){
-	int i;
-	int ar1[10], ar2[10];	 	//arrays to hold numbers and iterate
+	int i, int ar1[10], ar2[10];	//arrays to hold numbers and iterate
 	double avg;
-	srand(time(NULL));	    //initiate rand() function
-
-	for (i=0;i<10;i++){	    //arithmetic loop to
+	srand(time(NULL));	    	//initiate rand() function
+	for (i=0;i<10;i++){	    	//arithmetic loop to
 		ar1[i]=rand()%100+1;	//generate 10 random nums between 1-100
 		ar2[i]=sqrt(ar1[i]);	//and hold the root value for avg
-
 		printf("Integer: %d Narest Square Root: %d\n", ar1[i], ar2[i]);
 	}
-
-	avg = getavg(ar2, 10);	//call to retrieve avg of square rootsum
-
+	avg = getavg(ar2, 10);		//call to retrieve avg of square rootsum
 	printf("Average of squares: %f\n", avg);
-
 	return 0;
 }
-

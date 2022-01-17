@@ -5,16 +5,15 @@
 
 int main(){
 
-		int i;
-		float array[10], array2[10];
+		int i, array[10];
+		float array2[10], sum =0, avg;
 		srand(time(NULL));
-		float sum =0, avg;
 
 		for (i = 0; i < 10; i++){
 			array[i] = rand()%10+1;
 			array2[i] = sqrt(array[i]);
 			sum += array2[i];
-			printf("Num: %f Root: %f\n", array[i], array2[i]);
+			printf("Num: %d Root: %f\n", array[i], array2[i]);
 			avg = sum / 10;
 
 		}

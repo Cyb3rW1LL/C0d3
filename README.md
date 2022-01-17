@@ -1,2 +1,3 @@
-# *C0d3
-#####Coding projects from research and coursework
+# C0d3
+````C
+*Coding projects from research and coursework

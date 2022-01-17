@@ -29,9 +29,9 @@ ALTERNATIVELY
 #include <time.h>
 
 int main(){
-		int i, array[10];					//Var definitions for counter, array
-		float sum =0, avg;					//sum initialization and avg
-		srand(time(NULL));					//rand() initilization
+		int i, array[10];					//Var definitions for counter, empty array,
+		float sum =0, avg;					//sum initialization, and avg,
+		srand(time(NULL));					//and rand() initilization
 		for (i = 0; i < 10; i++){				//Arithmetic loop
 			array[i] = sqrt(rand());			//fill array with the square root of 10 random values
 			sum += array[i];				//calculate and add the sum of the array to "sum"

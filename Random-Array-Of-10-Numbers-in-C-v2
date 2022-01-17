@@ -24,3 +24,21 @@ int main(){
 		return 0;
 
 	}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ALTERNATIVELY
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main(){
+		int i, array[10];
+		float sum =0, avg;
+		srand(time(NULL));
+		for (i = 0; i < 10; i++){
+			array[i] = sqrt(rand()%10+1);
+			sum += array[i];
+			avg = sum / 10;
+		}
+		printf("Average of 10 Square Root Values: %f\n", avg);
+		return 0;
+	}

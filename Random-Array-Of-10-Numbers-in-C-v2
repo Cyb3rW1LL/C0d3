@@ -5,18 +5,18 @@
 
 int main(){
 
-		int i, array[10];					//similar as below but
+		int i, array[10];					//similar to the function below but
 		float array2[10], sum =0, avg;				//second array used to hold square roots separately
 		srand(time(NULL));
 		for (i = 0; i < 10; i++){
 			array[i] = rand()%10+1;				//generate 10 random numbers between 1 and 10
 			array2[i] = sqrt(array[i]);			//calculate and hold square root values of "array[]"
 			sum += array2[i];
-			printf("Num: %d Root: %f\n", array[i], array2[i]);
+			printf("Num: %d Root: %f\n", array[i], array2[i]); //This prints the values of array and array2 post prcoessing
 			avg = sum / 10;
 		}
-		printf("Sum of Roots: %f\n", sum);
-		printf("Average of Roots: %f\n", avg);
+		printf("Sum of Roots: %f\n", sum);			//Print root sum
+		printf("Average of Roots: %f\n", avg);			//Print Average
 
 		return 0;
 

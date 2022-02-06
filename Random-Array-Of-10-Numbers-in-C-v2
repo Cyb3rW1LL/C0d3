@@ -5,7 +5,7 @@
 
 int main(){
 
-		int i, array[10];					//similar to the function below but
+		int i, array[10];					//similar to the code below but
 		float array2[10], sum =0, avg;				//second array used to hold square roots separately
 		srand(time(NULL));
 		for (i = 0; i < 10; i++){

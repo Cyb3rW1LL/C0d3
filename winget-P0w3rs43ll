@@ -1,0 +1,5 @@
+ONE-LINER TO INSTALL POWERSHELL 7 VIA winget
+
+$ winget search Powershell ##to verify which package you would like to install
+
+$ winget install Microsoft.Powershell

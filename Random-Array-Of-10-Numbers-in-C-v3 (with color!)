@@ -16,22 +16,24 @@ void reset(){
 	printf("\033[0m");
 }
 int main(){
-	int i, ar1[10];//Var definitions for counter, empty array
-	double sum =0, avg, ar2[10]; //sum initialization, and avg,
-	srand(time(NULL)); //rand() initilization
-	blue();
+	int i, ar1[10];			//Var definitions for counter, empty array1
+	double sum =0, avg, ar2[10]; 	//sum initialization, avg, and ar2
+	srand(time(NULL)); 		//rand() initilization
+	blue();				//print in blue!
 	printf("Random Number:\tSquare Root:\n");
-	reset();
+	reset();			//reset to default terminal color
 	for (i = 0; i < 10; i++) { //Arithmetic loop
-		ar1[i] = rand()%100+1; //fill array with the square root of 10 random values
-		ar2[i] = sqrtf(ar1[i]);//fill array 2 with root of original value
-		yellow();
+		ar1[i] = rand()%100+1; 	//fill array with the square root of 10 random values
+		ar2[i] = sqrtf(ar1[i]);	//fill array 2 with root of original value
+		yellow();		//print in yellow!
+					//format a semi-nice tabbed table
 		printf("\t%d \t\t%.2lf\n", ar1[i], ar2[i]);
 		reset();
-		sum += ar2[i]; //calculate and add the sum of roots to the array to "sum"
-		avg = sum / 10;	//calculate the average by dividing sum by the number of items in the array
+		sum += ar2[i]; 		//calculate and add the sum of roots of the array to "sum"
+		avg = sum / 10;		//calculate the average by dividing sum by the number of items in the array
 	}
-	white();
+	white();			//print in white!
+					//print the vlues in a another semi-nice table
 	printf("Sum of Squares: \t%.2lf\nAverage of Squares: \t%.2lf\n", sum, avg);	//print the average and use the %f "float" field identifier
 	reset();
 	return 0;
